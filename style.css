@@ -1,0 +1,149 @@
+body,
+html {
+  height: 100%;
+}
+
+body {
+  background-image: url("./images/background.jpg");
+
+  height: 90%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#score {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -15%);
+}
+
+#pannel {
+  position: absolute;
+  right: 0%;
+  top: 50%;
+}
+
+.player_station {
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  opacity: 1;
+  animation: displayPlayerHide 10s 1 ease;
+  animation-iteration-count: infinite;
+}
+@keyframes displayPlayerHide {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.player_mr {
+  position: absolute;
+  bottom: 1%;
+  left: 25%;
+  opacity: 0;
+  animation: displayPlayerMr 10s 1 ease;
+  animation-iteration-count: infinite;
+}
+
+.player_station2 {
+  position: absolute;
+  bottom: 0%;
+  left: 45%;
+  opacity: 0;
+  animation: displayPlayerStation2 10s 1 ease;
+  animation-iteration-count: infinite;
+}
+.player_dunk {
+  position: absolute;
+  bottom: 10%;
+  left: 75%;
+  opacity: 0;
+  animation: displayPlayerDunk 10s 1 ease;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes displayPlayerMr {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes displayPlayerStation2 {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes displayPlayerDunk {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+  }
+}
+
+.ball {
+  position: absolute;
+  left: 92.5%;
+  bottom: 2%;
+  animation: ballmove 10s 1 ease;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes ballmove {
+  0% {
+    transform: rotateZ(-360deg);
+    bottom: 25%;
+    left: 16.8%;
+  }
+  12.5% {
+    bottom: 2%;
+    left: 16.8%;
+  }
+  25% {
+    bottom: 28%;
+    left: 36.7%;
+  }
+  37.5% {
+    bottom: 2%;
+    left: 36.7%;
+  }
+  50% {
+    bottom: 25%;
+    left: 57.2%;
+  }
+  62.5% {
+    bottom: 2%;
+    left: 57.2%;
+  }
+  75% {
+    bottom: 36.2%;
+    left: 75.2%;
+  }
+  87.5% {
+    bottom: 40%;
+    left: 92.5%;
+  }
+  100% {
+    bottom: 2%;
+    left: 92.5%;
+  }
+}
